@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import saveToJSON as save
 
 #
 # Global default settings
@@ -9,6 +10,7 @@ import sys
 EXIT_SUCCESS = 0
 
 def main():
+    jsonObj = save.loadJSON("json.txt");
     print("Enter nutritional values:")
     calories = input("Calories:")
     carbs = input("Carbohydrates:")
