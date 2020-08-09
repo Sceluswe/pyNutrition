@@ -3,9 +3,9 @@ Offline nutrition recorder
 I created this side-project because I wanted a privacy oriented alternative to common fitness applications. This allows the user to store their data on their own computer.
 
 #  Definition of Terms
-Food Item = A food item can be 100g of bread from brand X and the nutritional values for 100g of bread. 
-Portion = The actual consumed amount of a food item, e.g. 35g of bread from brand X. The program will calculate 35g using the recorded food item.
-Meal = All portions consumed for Breakfast (Lunch or Dinner or any number of meals selected by the user).
+* Food Item = A food item can be 100g of bread from brand X and the nutritional values for 100g of bread. 
+* Portion = The actual consumed amount of a food item, e.g. 35g of bread from brand X. The program will calculate 35g using the recorded food item.
+* Meal = All portions consumed for Breakfast (Lunch or Dinner or any number of meals selected by the user).
 
 # Short-term goals:
 1. Allow the user to store portions and record nutritional values for each portion.
