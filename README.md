@@ -8,7 +8,7 @@ I created this side-project because I wanted a privacy oriented alternative to c
 * Meal = All portions consumed for Breakfast (Lunch or Dinner or any number of meals selected by the user).
 
 # Short-term goals:
-1. Allow the user to store food items and record the Brandname and fullname of each food item, the amount, carbs, protein and fat and sugar.
+1. Allow the user to store food items and record the Brandname and fullname of each food item, the amount, carbs, protein, fat and sugar.
 3. Allow the user to choose from all recorded food items and select one to be used as the basis of a portion.
 4. Calculate and record the chosen portion.
 2. Calculate the totals of all portions in a day and present it.
