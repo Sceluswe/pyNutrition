@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import saveToJSON as save
+import myJson as save
 
 #
 # Global default settings
