@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import myJson as save
+import jsonFoodWrapper as jfw
 
 #
 # Global default settings
@@ -10,7 +10,8 @@ import myJson as save
 EXIT_SUCCESS = 0
 
 def main():
-    jsonObj = save.loadJSON("json.txt");
+    jfwObj = jfw.jsonFoodWrapper()
+
     print("Enter nutritional values:")
     calories = input("Calories:")
     carbs = input("Carbohydrates:")
@@ -20,7 +21,11 @@ def main():
     print(calories)
     print(carbs)
     print(protein)
-    print(fat)
+    print(fat + "\n")
+
+    jfwObj.add(calories, carbs, protein, fat, "0")
+    jfwObj.typeOut()
+
     sys.exit(EXIT_SUCCESS)
 
 main()
