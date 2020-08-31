@@ -9,6 +9,8 @@ class jsonFoodWrapper:
     def __init__(self):
         self.filename = "json.txt"
         self.jsonObject = myjson.loadJSON("json.txt")
+        self.groceryID = self.jsonObject["groceryID"] if "groceryID" in self.jsonObject else 0
+        print(self.groceryID)
 
     def add(self, calories, carbs, protein, fat, sugar):
         self.jsonObject["grocery"] = {
