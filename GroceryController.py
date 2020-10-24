@@ -12,11 +12,12 @@ class GroceryController:
         self.groceryID = self.jsonObject["groceryID"] if "groceryID" in self.jsonObject else 0
         print(self.groceryID)
 
-    def add(self, brand, name, calories, carbs, protein, fat, sugar):
+    def add(self, brand, name, amount, calories, carbs, protein, fat, sugar):
         self.jsonObject["grocery"] = {
             "groveryID": self.groceryID,
             "brand": brand,
             "name": name,
+            "amount": amount,
             "calories": calories,
             "carbs": carbs,
             "protein": protein,
