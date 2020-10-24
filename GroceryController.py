@@ -5,7 +5,7 @@ import json
 import myJson as myjson
 
 
-class jsonFoodWrapper:
+class GroceryController:
     def __init__(self):
         self.filename = "json.txt"
         self.jsonObject = myjson.loadJSON("json.txt")

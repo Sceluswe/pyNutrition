@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import jsonFoodWrapper as jfw
+import GroceryController as gc
 
 #
 # Global default settings
@@ -10,7 +10,11 @@ import jsonFoodWrapper as jfw
 EXIT_SUCCESS = 0
 
 def main():
-    jfwObj = jfw.jsonFoodWrapper()
+    gcObj = gc.GroceryController()
+
+    print("1. Create grocery")
+    print("2. Create portion")
+    print("3. Create meal")
 
     print("Enter nutritional values:")
     calories = input("Calories:")
@@ -23,8 +27,8 @@ def main():
     print(protein)
     print(fat + "\n")
 
-    jfwObj.add(calories, carbs, protein, fat, "0")
-    jfwObj.typeOut()
+    gcObj.add(calories, carbs, protein, fat, "0")
+    gcObj.typeOut()
 
     sys.exit(EXIT_SUCCESS)
 

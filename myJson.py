@@ -40,6 +40,7 @@ def saveJSON(filename, JSONobject):
         json.dump(JSONobject, JSONfile, indent=4)
 
 
+# test code:
 loadJSON("json.txt")
 # Create a dictionary
 my_dict = {"lel": "test", "nej": "test1"}
