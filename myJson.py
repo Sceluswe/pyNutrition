@@ -6,6 +6,7 @@ Save jsonObj to json file.
 """
 import json
 
+
 def loadJSON(filename):
     """
     Load a JSON file.

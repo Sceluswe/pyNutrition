@@ -10,7 +10,6 @@ class GroceryController:
         self.filename = "json.txt"
         self.jsonObject = myjson.loadJSON("json.txt")
         self.groceryID = self.jsonObject["groceryID"] if "groceryID" in self.jsonObject else 0
-        print(self.groceryID)
 
     def add(self, brand, name, amount, calories, carbs, protein, fat, sugar):
         self.jsonObject["grocery"] = {
@@ -25,7 +24,8 @@ class GroceryController:
             "sugar": sugar
         }
 
-        groceryID++;
+        self.groceryID += 1
 
     def typeOut(self):
-        print(self.jsonObject["grocery"])
+        if "grocery" in self.jsonObject:
+            print(self.jsonObject["grocery"])

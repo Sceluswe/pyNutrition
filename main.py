@@ -10,26 +10,29 @@ import menu
 #
 EXIT_SUCCESS = 0
 
+
 def main():
+    programLoop = True
     gcObj = gc.GroceryController()
 
+    print("0. Exit")
     print("1. Create grocery")
+
     #print("2. Create portion")
     #print("3. Create meal")
 
-    number = input("Menu Option: ")
+    while(programLoop):
+        number = input("Menu Option: ")
 
-    switch(number)
-    {
-        case 1:
-        menu.addGrocery(gcObj)
-        break;
-        default:
-        printf("Option doesn't exist.")
-    }
+        if number == "1":
+            print("Lol")
+            menu.addGrocery(gcObj)
+        if number == "0":
+            programLoop = False
 
     gcObj.typeOut()
 
     sys.exit(EXIT_SUCCESS)
+
 
 main()
