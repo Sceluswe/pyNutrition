@@ -3,6 +3,7 @@
 
 import sys
 import GroceryController as gc
+import menu
 
 #
 # Global default settings
@@ -18,18 +19,15 @@ def main():
 
     number = input("Menu Option: ")
 
-    print("Enter nutritional values:")
-    calories = input("Calories:")
-    carbs = input("Carbohydrates:")
-    protein = input("Protein:")
-    fat = input("Fat:")
+    switch(number)
+    {
+        case 1:
+        menu.addGrocery(gcObj)
+        break;
+        default:
+        printf("Option doesn't exist.")
+    }
 
-    print(calories)
-    print(carbs)
-    print(protein)
-    print(fat + "\n")
-
-    gcObj.add(calories, carbs, protein, fat, "0")
     gcObj.typeOut()
 
     sys.exit(EXIT_SUCCESS)
