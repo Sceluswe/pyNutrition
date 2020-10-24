@@ -38,12 +38,3 @@ def saveJSON(filename, JSONobject):
     # Save the sequence to the file.
     with open(filename, "w") as JSONfile:
         json.dump(JSONobject, JSONfile, indent=4)
-
-
-# test code:
-loadJSON("json.txt")
-# Create a dictionary
-my_dict = {"lel": "test", "nej": "test1"}
-# Save dictionary in a dict called seo
-jsonObj = {"seo": my_dict}
-# make it a json object and dump it to a file.
