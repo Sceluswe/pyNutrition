@@ -13,8 +13,10 @@ def main():
     gcObj = gc.GroceryController()
 
     print("1. Create grocery")
-    print("2. Create portion")
-    print("3. Create meal")
+    #print("2. Create portion")
+    #print("3. Create meal")
+
+    number = input("Menu Option: ")
 
     print("Enter nutritional values:")
     calories = input("Calories:")
